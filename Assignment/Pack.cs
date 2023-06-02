@@ -31,6 +31,10 @@ public class Pack
     {
         return _maxCount;
     }
+        public int GetCurrentCount()
+    {
+        return _currentCount;
+    }
 
     public bool Add(InventoryItem item)
     {
@@ -84,7 +88,7 @@ public abstract class InventoryItem
     public abstract string Display();
 }
 
-class Arrow : InventoryItem
+public class Arrow : InventoryItem
 {
     public Arrow() : base(0.05f, 0.1f) { }
 
@@ -92,9 +96,11 @@ class Arrow : InventoryItem
     {
         return $"An arrow with weight {GetWeight()} and volume {GetVolume()}";
     }
+    public float Weight { get; set; }
+    public float Volume { get; set; }
 }
 
-class Bow : InventoryItem
+public class Bow : InventoryItem
 {
     public Bow() : base(4f, 1f) { }
 
@@ -102,9 +108,11 @@ class Bow : InventoryItem
     {
         return $"A bow with weight {GetWeight()} and volume {GetVolume()}";
     }
+    public float Weight { get; set; }
+    public float Volume { get; set; }
 }
 
-class Rope : InventoryItem
+public class Rope : InventoryItem
 {
     public Rope() : base(1.5f, 1f) { }
 
@@ -112,9 +120,11 @@ class Rope : InventoryItem
     {
         return $"A rope with weight {GetWeight()} and volume {GetVolume()}";
     }
+    public float Weight { get; set; }
+    public float Volume { get; set; }
 }
 
-class Water : InventoryItem
+public class Water : InventoryItem
 {
     public Water() : base(3f, 2f) { }
 
@@ -122,9 +132,11 @@ class Water : InventoryItem
     {
         return $"Water with weight {GetWeight()} and volume {GetVolume()}";
     }
+    public float Weight { get; set; }
+    public float Volume { get; set; }
 }
 
-class Food : InventoryItem
+public class Food : InventoryItem
 {
     public Food() : base(0.5f, 1f) { }
 
@@ -132,9 +144,11 @@ class Food : InventoryItem
     {
         return $"Food with weight {GetWeight()} and volume {GetVolume()}";
     }
+    public float Weight { get; set; }
+    public float Volume { get; set; }
 }
 
-class Sword : InventoryItem
+public class Sword : InventoryItem
 {
     public Sword() : base(3f, 5f) { }
 
@@ -142,4 +156,6 @@ class Sword : InventoryItem
     {
         return $"A sword with weight {GetWeight()} and volume {GetVolume()}";
     }
+    public float Weight { get; set; }
+    public float Volume { get; set; }
 }
