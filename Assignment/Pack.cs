@@ -31,7 +31,7 @@ public class Pack
     {
         return _maxCount;
     }
-        public int GetCurrentCount()
+    public int GetCurrentCount()
     {
         return _currentCount;
     }

@@ -82,11 +82,11 @@ namespace AssignmentTest
         {
             Assert.ThrowsException<OverflowException>(() => new Pack(-10, 20f, 30f));
         }
-                public void Add_NegativeValuesForVolume()
+        public void Add_NegativeValuesForVolume()
         {
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => new Pack(10, -20f, 30f));
         }
-                public void Add_NegativeValuesForWeight()
+        public void Add_NegativeValuesForWeight()
         {
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => new Pack(10, 20f, -30f));
         }
