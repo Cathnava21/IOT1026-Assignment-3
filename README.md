@@ -14,6 +14,8 @@
 # IOT1026-Assignment-3
 This program allows users to create packs with specific limits and add inventory items to those packs while maintaining the constraints of volume, weight, and count. It provides a convenient way to manage and track items within a limited storage capacity.  
         
+ *******************  This is an example  *******************
+        
 ![image](https://github.com/Cathnava21/IOT1026-Assignment-3/assets/131034603/b380167e-7fa9-49ab-8a35-faed0c73f854)
 
 
